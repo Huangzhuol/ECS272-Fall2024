@@ -93,7 +93,7 @@ export default {
 
 
             const xLabel = chartContainer.append('g')
-                .attr('transform', `translate(${this.size.width / 2 - this.margin.left-40}, ${this.size.height - this.margin.top -20})`)
+                .attr('transform', `translate(${this.size.width / 2 - this.margin.left-40}, ${this.size.height - this.margin.top -10})`)
                 .append('text')
                 .text('Alcohol Consumption Levels (1 to 5)')
             
@@ -161,7 +161,7 @@ export default {
 
             const title = chartContainer.append('g')
                 .append('text') 
-                .attr('transform', `translate(${this.size.width / 2}, ${this.size.height - this.margin.top + 5})`)
+                .attr('transform', `translate(${this.size.width / 2}, ${this.size.height - this.margin.top +10})`)
                 .style('text-anchor', 'middle')
                 .style('font-weight', 'bold')
                 .text('Alcohol consumption during workday and weekend') 
