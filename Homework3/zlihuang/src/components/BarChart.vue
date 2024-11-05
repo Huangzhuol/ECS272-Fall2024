@@ -9,7 +9,7 @@ export default {
         return {
             mergedData: [] as d3.DSVRowString<string>[],    
             size: { width: 0, height: 0 } as ComponentSize,
-            margin: {left: 50, right: 20, top: 20, bottom: 80} as Margin,
+            margin: {left: 50, right: 20, top: 40, bottom: 80} as Margin,
         }
     },
     created() {
