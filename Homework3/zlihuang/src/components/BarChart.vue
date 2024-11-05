@@ -7,7 +7,7 @@ import { Bar, ComponentSize, Margin } from '../types';
 export default {
     data() {
         return {
-            mergedData: [] as d3.DSVRowString<string>[],      // Merged data
+            mergedData: [] as d3.DSVRowString<string>[],    
             size: { width: 0, height: 0 } as ComponentSize,
             margin: {left: 50, right: 20, top: 20, bottom: 80} as Margin,
         }
@@ -25,8 +25,8 @@ export default {
             if (target) {
                 this.size = { width: target.clientWidth * 0.8, height: target.clientHeight * 0.6 };
             }
-            d3.select('#bar-svg').selectAll('*').remove(); // Clear the chart
-            this.initChart(); // Redraw the chart with new dimensions
+            d3.select('#bar-svg').selectAll('*').remove(); 
+            this.initChart(); 
         },
         async loadAndMergeData() {
             try {

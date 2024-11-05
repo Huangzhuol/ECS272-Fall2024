@@ -139,7 +139,6 @@ export default {
                 .style("text-anchor", "middle")
                 .text("Final Grade (G3)");
         
-            
             g.append("g")
                 .attr("transform", `translate(0,${height})`)
                 .append("text")
@@ -170,7 +169,7 @@ export default {
                 .attr("class", "dalc-point")
                 .attr("cx", d => xScale(+d.Dalc))
                 .attr("cy", d => yScale(+d.G3))
-                .attr("r", 0) // Start with radius 0 for animation
+                .attr("r", 0) 
                 .attr("fill", "blue")
                 .attr("opacity", 0)
                 .on("mouseover", (event, d) => {
@@ -184,18 +183,16 @@ export default {
                 .on("mouseout", () => tooltip.style("visibility", "hidden"))
                 .transition()
                 .duration(500)
-                .attr("r", d => radiusScale(d.count)) // Transition to full size
+                .attr("r", d => radiusScale(d.count)) 
                 .attr("opacity", 0.7);
                 
             dalcPoints.exit()
                 .transition()
                 .duration(500)
-                .attr("r", 0) // Shrink to radius 0
+                .attr("r", 0) 
                 .attr("opacity", 0)
                 .remove();
 
-            
-        
             const walcPoints = g.selectAll(".walc-point")
                 .data(filteredWalcData, (d: any) => d.Walc);
 
@@ -204,7 +201,7 @@ export default {
                 .attr("class", "walc-point")
                 .attr("cx", d => xScale(+d.Walc)+gap)
                 .attr("cy", d => yScale(+d.G3))
-                .attr("r", 0) // Start with radius 0 for animation
+                .attr("r", 0) 
                 .attr("fill", "orange")
                 .attr("opacity", 0)
                 .on("mouseover", (event, d) => {
@@ -224,7 +221,7 @@ export default {
             walcPoints.exit()
                 .transition()
                 .duration(500)
-                .attr("r", 0) // Shrink to radius 0
+                .attr("r", 0)
                 .attr("opacity", 0)
                 .remove();
 
