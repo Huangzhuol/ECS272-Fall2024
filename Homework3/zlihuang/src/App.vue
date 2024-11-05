@@ -37,15 +37,13 @@ export default {
     <v-row no-gutters class="flex-grow-1" style="height: 65%;position: relative;">
       <v-col cols="6" class="d-flex" >
         <BarChart @bar-hover="updateData" />
-        <textarea style="position: absolute; bottom:-25px; left: 0; width: 100%;height: 270px;">Explanation:
+        <textarea style="position: absolute; bottom:-25px; left: 0; width: 50%;height: 270px;">Explanation(It needs time to load):
 1.Hang on the bar, the scatter will  delete other scatter of
 the same type, the sankey will highlight relevant node and links with animation
-
 2. Hang on the bar,it will show the amount.Hang on the scatter point, it will 
 show the x-value,y-value and how many people(count).In sankeyChart,hang 
 on the nodes, it will highlight relevant links and hang on the links, it will 
 show the Percentage of a single link to two adjacent nodes.
-
 3. Grade category: good:>15  mid:>10  bad:Remaining
         </textarea>
       </v-col>

@@ -230,24 +230,24 @@ export default {
 
             // Dalc legend entry
             legend.append("circle")
-                .attr("cx", 0)
+                .attr("cx", 15)
                 .attr("cy", -10)
                 .attr("r", 5)
                 .attr("fill", "blue");
             legend.append("text")
-                .attr("x", 10)
+                .attr("x", 25)
                 .attr("y", -10)
                 .text("Dalc (Workday)")
                 .style("alignment-baseline", "middle");
 
             // Walc legend entry
             legend.append("circle")
-                .attr("cx", 0)
+                .attr("cx", 15)
                 .attr("cy", 10)
                 .attr("r", 5)
                 .attr("fill", "orange");
             legend.append("text")
-                .attr("x", 10)
+                .attr("x", 25)
                 .attr("y", 10)
                 .text("Walc (Weekend)")
                 .style("alignment-baseline", "middle");
